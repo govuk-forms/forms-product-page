@@ -132,7 +132,7 @@ We may modify or amend this privacy notice at our discretion at any time. When w
 
 ## Questions and complaints
 
-Contact [gds-privacy-office@digital.cabinet-office.gov.uk](mailto:gds-privacy-office@digital.cabinet-office.gov.uk) if you either:
+Contact [gds.data.protection@dsit.gov.uk](mailto:gds.data.protection@dsit.gov.uk) if you either:
 
 - have questions about anything in this document
 - think that your personal data has been misused or mishandled
