@@ -16,3 +16,9 @@ These are the steps to make a form with GOV.UK Forms.
 5. Publish a link to the form on GOV.UK along with any guidance people need to read before they complete the form.
 6. By default, answers for each completed form will be sent in the body of an email - to the email address you specified. You can also get the answers in a CSV or JSON file.
 
+## Features of GOV.UK Forms
+
+Find out more about:
+
+- <%= govuk_link_to "features", features_path %> already available in the platform
+- <%= govuk_link_to "forthcoming features", forthcoming_features_path %> that will be available in the near future
