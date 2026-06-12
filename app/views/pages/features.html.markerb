@@ -127,7 +127,4 @@ Using these tested and accessible designs means you do not have to worry about t
 
 When new features are released, we'll email users of the product and update this page.
 
-You can also:
-
-- <%= govuk_link_to "read about our forthcoming features", forthcoming_features_path %>
-- <%= govuk_link_to "join our mailing list to get updates", mailing_list_path %>
+You can also <%= govuk_link_to "read about our forthcoming features", forthcoming_features_path %>.
