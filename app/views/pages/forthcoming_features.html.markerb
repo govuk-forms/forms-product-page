@@ -7,7 +7,7 @@ These are the features we're working on next and approximately when we hope to r
 
 This information is just a guide. It's not everything we're doing, and things may move.
 
-We'll update everyone with an account when we release new features. Or you can <%= govuk_link_to "sign up to our mailing list for updates", mailing_list_path %>.
+We'll update everyone with an account when we release new features.
 
 ## What we're working on now
 
