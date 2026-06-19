@@ -37,7 +37,7 @@
 
 <% content_for :footer do %>
   <%= govuk_footer meta_items_title: t("footer.meta_items_title"), meta_items: do |footer| %>
-    <%= footer.with_meta_html do %>
+    <% footer.with_meta_html do %>
       <div class="govuk-footer__meta-custom">
         Built by the
         <a
