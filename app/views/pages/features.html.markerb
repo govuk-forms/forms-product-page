@@ -72,9 +72,11 @@ By default, data from each completed form is sent in the body of an email - to t
 
 [Read more about options for processing completed form submissions](https://www.forms.service.gov.uk/processing-completed-form-submissions).
 
-## People can check their answers before they submit a form
+## People can check their answers before they submit a form - and get a copy of them by email
 
-People will be shown a summary page when they have answered all the questions in a form. They will be able to review and check their answers before they submit the form. This will help to avoid errors or missing information.
+People will be shown a summary page when they have answered all the questions in a form. They will be able to review and check their answers before they submit the form. 
+
+You can give them the option to get a copy of their answers by email. We use GOV.UK One Login to help make sure answers are not sent to the wrong email address.
 
 ## Add a declaration for people to agree to
 
