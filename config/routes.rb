@@ -34,10 +34,12 @@ Rails.application.routes.draw do
 
   get "/support" => "support#support", as: :support
   post "/support" => "support#new", as: :new_support_message
-  get "/support/help-using-forms" => "support#help_using_forms", as: :help_using_forms
-  post "/support/help-using-forms" => "support#submit"
-  get "/support/question-about-forms" => "support#question_about_forms", as: :question_about_forms
-  post "/support/question-about-forms" => "support#submit"
+  get "/support/help-using-forms" => redirect("/support/form?request_type=help_using")
+  get "/support/question-about-forms" => redirect("/support/form?request_type=general_question")
+  get "/support/request-type" => "support#request_type", as: :support_request_type
+  post "/support/request-type" => "support#select_request_type", as: :select_support_request_type
+  get "/support/form" => "support#form", as: :support_form
+  post "/support/form" => "support#submit"
 
   get "/json-submissions/v1/schema" => "json_submissions#schema_v1", as: :json_submissions_schema_v1
 

@@ -1,16 +1,24 @@
-<% set_page_title(title_with_error_prefix(t("page_titles.support.#{@support_form.i_need_help_with}"), error: @support_form.errors.any?)) %>
+<% set_page_title(title_with_error_prefix(@support_form.support_page_title, error: @support_form.errors.any?)) %>
 <% set_page_robots("noindex") %>
 
-<% content_for :back_link, govuk_back_link(href: support_path) %>
+<% content_for :back_link, govuk_back_link(href: support_request_type_path) %>
 
 <%= form_with model: @support_form, url: false do |f| %>
   <% f.govuk_error_summary %>
 
-  <h1 class="govuk-heading-l"><%= t("page_titles.support.#{@support_form.i_need_help_with}") %></h1>
+  <h1 class="govuk-heading-l"><%= @support_form.support_page_title %></h1>
 
-  <%= f.hidden_field :i_need_help_with %>
+  <%= f.hidden_field :request_type %>
 
-  <%= f.govuk_text_area @support_form.i_need_help_with.to_sym == :using_forms ? :message : :question, rows: 10, spellcheck: true %>
+  <% message_options = {
+       rows: 10,
+       spellcheck: true,
+       label: { text: @support_form.support_message_label },
+     } %>
+  <% message_hint = @support_form.support_message_hint %>
+  <% message_options[:hint] = { text: message_hint } if message_hint.present? %>
+
+  <%= f.govuk_text_area @support_form.support_message_attribute, **message_options %>
   <%= f.govuk_text_field :name, autocomplete: :name, spellcheck: false %>
   <%= f.govuk_email_field :email_address, autocomplete: :email, spellcheck: false %>
 
