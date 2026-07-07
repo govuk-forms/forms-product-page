@@ -1,0 +1,18 @@
+<% set_page_title(title_with_error_prefix(t("page_titles.support.request_type"), error: @support_form.errors.any?)) %>
+<% set_page_robots("noindex") %>
+
+<% content_for :back_link, govuk_back_link(href: support_path) %>
+
+<%= form_with model: @support_form, url: select_support_request_type_path do |f| %>
+  <%= f.govuk_error_summary %>
+
+  <%= f.govuk_collection_radio_buttons(
+      :request_type,
+      SupportForm::REQUEST_TYPE_OPTIONS,
+      ->(option) { option },
+      ->(option) { t("helpers.label.support_form.request_type_options.#{option}") },
+      legend: { text: t("helpers.legend.support_form.request_type"), size: "l", tag: "h1" },
+    )
+  %>
+  <%= f.govuk_submit t("continue") %>
+<% end %>
