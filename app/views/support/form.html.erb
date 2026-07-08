@@ -4,7 +4,34 @@
 <% content_for :back_link, govuk_back_link(href: support_path) %>
 
 <%= form_with model: @support_form, url: false do |f| %>
-  <% f.govuk_error_summary %>
+  <% if @support_form.errors.any? %>
+    <div class="govuk-error-summary" data-module="govuk-error-summary">
+      <div role="alert">
+        <h2 class="govuk-error-summary__title">
+          There is a problem
+        </h2>
+        <div class="govuk-error-summary__body">
+          <ul class="govuk-list govuk-error-summary__list">
+            <% if @support_form.errors.include?(:message) %>
+              <li>
+                <a href="#support-form-message-field-error"><%= @support_form.errors.messages_for(:message).first %></a>
+              </li>
+            <% end %>
+            <% if @support_form.errors.include?(:name) %>
+              <li>
+                <a href="#support-form-name-field-error"><%= @support_form.errors.messages_for(:name).first %></a>
+              </li>
+            <% end %>
+            <% if @support_form.errors.include?(:email_address) %>
+              <li>
+                <a href="#support-form-email-address-field-error"><%= @support_form.errors.messages_for(:email_address).first %></a>
+              </li>
+            <% end %>
+          </ul>
+        </div>
+      </div>
+    </div>
+  <%end%>
 
   <h1 class="govuk-heading-l"><%= t("page_titles.support.#{@support_form.i_need_help_with}") %></h1>
 
