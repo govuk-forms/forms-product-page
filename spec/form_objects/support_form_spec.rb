@@ -10,12 +10,14 @@ describe SupportForm, type: :model do
     end
 
     it "is valid to submit if all attributes are present" do
-      expect(described_class.new(
-               i_need_help_with: "using_forms",
-               message: "I need help using GOV.UK Forms",
-               name: "A. User",
-               email_address: "test@example.com",
-             )).to be_valid(:submit)
+      support_form = described_class.new(
+        i_need_help_with: "using_forms",
+        message: "I need help using GOV.UK Forms",
+        name: "A. User",
+        email_address: "test@example.com",
+      )
+
+      expect(support_form).to be_valid(:submit)
     end
 
     %i[i_need_help_with message name email_address].each do |attr|
@@ -32,6 +34,40 @@ describe SupportForm, type: :model do
 
         expect(support_form).not_to be_valid(:submit)
         expect(support_form.errors).to be_added attr, :blank
+      end
+    end
+
+    context "when `message` has a validation error" do
+      it "adds an error to `message` but not `question`" do
+        attrs = {
+          i_need_help_with: "using_forms",
+          message: "",
+          name: "A. User",
+          email_address: "test@example.com",
+        }
+
+        support_form = described_class.new(**attrs)
+
+        expect(support_form).not_to be_valid(:submit)
+        expect(support_form.errors.full_messages_for(:message)).to eq ["Message Enter your message"]
+        expect(support_form.errors.full_messages_for(:question)).to be_empty
+      end
+    end
+
+    context "when `question` has a validation error" do
+      it "adds an error to `message` but not `question`" do
+        attrs = {
+          i_need_help_with: "about_forms",
+          question: "",
+          name: "A. User",
+          email_address: "test@example.com",
+        }
+
+        support_form = described_class.new(**attrs)
+
+        expect(support_form).not_to be_valid(:submit)
+        expect(support_form.errors.full_messages_for(:message)).to be_empty
+        expect(support_form.errors.full_messages_for(:question)).to eq ["Question Enter your question"]
       end
     end
 
@@ -108,6 +144,49 @@ describe SupportForm, type: :model do
             tags: [tag],
           ),
         )
+      end
+    end
+  end
+
+  describe "#i_need_help_with_using_forms?" do
+    let(:support_form) { described_class.new(i_need_help_with:) }
+    let(:i_need_help_with) { nil }
+
+    context "when i_need_help_with is nil" do
+      it "returns false" do
+        expect(support_form.i_need_help_with_using_forms?).to be false
+      end
+    end
+
+    context "when i_need_help_with is an empty string" do
+      let(:i_need_help_with) { "" }
+
+      it "returns false" do
+        expect(support_form.i_need_help_with_using_forms?).to be false
+      end
+    end
+
+    context "when i_need_help_with is about_forms" do
+      let(:i_need_help_with) { "about_forms" }
+
+      it "returns false" do
+        expect(support_form.i_need_help_with_using_forms?).to be false
+      end
+    end
+
+    context "when i_need_help_with is other_government_service" do
+      let(:i_need_help_with) { "other_government_service" }
+
+      it "returns false" do
+        expect(support_form.i_need_help_with_using_forms?).to be false
+      end
+    end
+
+    context "when i_need_help_with is using_forms" do
+      let(:i_need_help_with) { "using_forms" }
+
+      it "returns true" do
+        expect(support_form.i_need_help_with_using_forms?).to be true
       end
     end
   end
