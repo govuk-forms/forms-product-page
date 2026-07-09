@@ -12,20 +12,12 @@
         </h2>
         <div class="govuk-error-summary__body">
           <ul class="govuk-list govuk-error-summary__list">
-            <% if @support_form.errors.include?(:message) %>
-              <li>
-                <a href="#support-form-message-field-error"><%= @support_form.errors.messages_for(:message).first %></a>
-              </li>
-            <% end %>
-            <% if @support_form.errors.include?(:name) %>
-              <li>
-                <a href="#support-form-name-field-error"><%= @support_form.errors.messages_for(:name).first %></a>
-              </li>
-            <% end %>
-            <% if @support_form.errors.include?(:email_address) %>
-              <li>
-                <a href="#support-form-email-address-field-error"><%= @support_form.errors.messages_for(:email_address).first %></a>
-              </li>
+            <% @support_form.methods.each do |attribute| %>
+              <% if @support_form.errors.include?(attribute) %>
+                <li>
+                  <a href="#support-form-<%= attribute.to_s.dasherize %>-field-error"><%= @support_form.errors.messages_for(attribute).first %></a>
+                </li>
+              <% end %>
             <% end %>
           </ul>
         </div>
