@@ -4,26 +4,7 @@
 <% content_for :back_link, govuk_back_link(href: support_path) %>
 
 <%= form_with model: @support_form, url: false do |f| %>
-  <% if @support_form.errors.any? %>
-    <div class="govuk-error-summary" data-module="govuk-error-summary">
-      <div role="alert">
-        <h2 class="govuk-error-summary__title">
-          There is a problem
-        </h2>
-        <div class="govuk-error-summary__body">
-          <ul class="govuk-list govuk-error-summary__list">
-            <% @support_form.methods.each do |attribute| %>
-              <% if @support_form.errors.include?(attribute) %>
-                <li>
-                  <a href="#support-form-<%= attribute.to_s.dasherize %>-field-error"><%= @support_form.errors.messages_for(attribute).first %></a>
-                </li>
-              <% end %>
-            <% end %>
-          </ul>
-        </div>
-      </div>
-    </div>
-  <%end%>
+  <%= f.govuk_error_summary %>
 
   <h1 class="govuk-heading-l"><%= t("page_titles.support.#{@support_form.i_need_help_with}") %></h1>
 
