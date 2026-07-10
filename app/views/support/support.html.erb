@@ -3,7 +3,7 @@
 <% set_page_robots("noindex") %>
 
 <%= form_with model: @support_form, url: new_support_message_path do |f| %>
-  <% f.govuk_error_summary %>
+  <%= f.govuk_error_summary %>
 
   <h1 class="govuk-heading-xl"><%= t("page_titles.support.support") %></h1>
 
@@ -21,7 +21,7 @@
 <h2 class="govuk-heading-m">Check our system status</h2>
 
 <p>
-  If you have a problem with the platform, check for known issues on the <a href="https://status.forms.service.gov.uk">GOV.UK Forms system status page</a>. You can subscribe to get notifications about current and future issues. 
+  If you have a problem with the platform, check for known issues on the <a href="https://status.forms.service.gov.uk">GOV.UK Forms system status page</a>. You can subscribe to get notifications about current and future issues.
 </p>
 
 <h2 class="govuk-heading-m">Support during working hours</h2>

@@ -4,7 +4,7 @@
 <% content_for :back_link, govuk_back_link(href: support_path) %>
 
 <%= form_with model: @support_form, url: false do |f| %>
-  <% f.govuk_error_summary %>
+  <%= f.govuk_error_summary %>
 
   <h1 class="govuk-heading-l"><%= t("page_titles.support.#{@support_form.i_need_help_with}") %></h1>
 
