@@ -31,12 +31,18 @@ You can get a daily or weekly CSV file of all the submissions to a form from the
 
 If your organisation has access to the AWS stack, you can opt to receive form submissions in an AWS S3 bucket instead of by email. Submissions are written to the S3 bucket as individual JSON or CSV files.
 
-If you want to receive form submissions in an AWS S3 bucket, [send us a support request](https://www.forms.service.gov.uk/support) confirming that you:
+If you want to receive form submissions in an AWS S3 bucket, [send us a support request](https://www.forms.service.gov.uk/support) confirming:
 
-* have a technical team with access to the AWS stack, who can set up and maintain an S3 bucket on your behalf
-* intend to configure the S3 bucket following relevant NCSC guidance (in particular the [cloud security guidance](https://www.ncsc.gov.uk/collection/cloud/using-cloud-services-securely/using-a-cloud-platform-securely) and [advice on configuring S3 buckets securely](https://www.ncsc.gov.uk/blog-post/theres-hole-my-bucket))
+* that you have a technical team with access to the AWS stack, who can set up and maintain an S3 bucket on your behalf
+* that you intend to configure the S3 bucket following relevant NCSC guidance (in particular the [cloud security guidance](https://www.ncsc.gov.uk/collection/cloud/using-cloud-services-securely/using-a-cloud-platform-securely) and [advice on configuring S3 buckets securely](https://www.ncsc.gov.uk/blog-post/theres-hole-my-bucket))
+* whether you want to receive form submissions as JSON or CSV files
+* whether you want us to switch off email submissions immediately - or whether you want to continue to receive submissions by email (for example, to make sure you do not miss any submissions while you’re moving from email submissions to S3 submissions)
 
 Once you’ve raised the ticket, we’ll respond and tell you what permissions you need to give us so we can start writing data to your S3 bucket.
+
+### Switching off email submissions
+
+When you’re ready to switch off email submissions, [send us another support request](https://www.forms.service.gov.uk/support).
 
 ## Automatically forward email submissions to a different mailbox
 
