@@ -17,7 +17,7 @@ gem "tzinfo-data"
 gem "vite_rails", "~> 3.11"
 
 # For structured logging
-gem "lograge", "~> 0.14"
+gem "lograge", "~> 0.15"
 
 gem "config"
 
