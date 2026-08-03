@@ -5,6 +5,16 @@ RSpec.describe ApplicationController, type: :controller do
     def index
       render body: nil
     end
+
+    def missing_template
+      render "missing_template"
+    end
+  end
+
+  before do
+    routes.draw do
+      get "missing_template" => "anonymous#missing_template"
+    end
   end
 
   describe "#append_info_to_payload" do
@@ -47,6 +57,17 @@ RSpec.describe ApplicationController, type: :controller do
       it "returns nil" do
         expect(controller.user_ip("")).to be_nil
       end
+    end
+  end
+
+  describe "missing template" do
+    it "returns 406 when request format is not HTML" do
+      get :missing_template, format: :json
+      expect(response).to have_http_status(:not_acceptable)
+    end
+
+    it "raises the error when the request format is HTML" do
+      expect { get :missing_template, format: :html }.to raise_error(ActionView::MissingTemplate)
     end
   end
 end
