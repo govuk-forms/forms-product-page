@@ -1,4 +1,12 @@
 class ApplicationController < ActionController::Base
+  rescue_from ActionView::MissingTemplate do |exception|
+    if request.format && request.format != :html
+      head :not_acceptable
+    else
+      raise exception
+    end
+  end
+
   def append_info_to_payload(payload)
     super
     payload[:request_host] = request.host
