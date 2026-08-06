@@ -25,8 +25,6 @@ Rails.application.routes.draw do
   get "/create-good-forms" => redirect("/about/create-good-forms")
   get "/processing-completed-form-submissions" => redirect("/about/processing-completed-form-submissions")
 
-  get "/mailing-list" => redirect("https://service.us12.list-manage.com/subscribe?u=cb74eb9a6898b0e5870fede0a&id=451fe4c1e1")
-
   resources :performance, only: %i[index]
 
   get "/security.txt" => redirect("https://vulnerability-reporting.service.security.gov.uk/.well-known/security.txt")
