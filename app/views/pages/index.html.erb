@@ -172,18 +172,9 @@
         </h2>
         <p class="govuk-body">
           GOV.UK Forms is built by a team at the Government Digital
-          Service. You can:
+          Service. <%= govuk_link_to "contact us", support_path %>
+            if you have a question or need help.
         </p>
-        <ul class="govuk-list govuk-list--bullet">
-          <li>
-            <%= govuk_link_to "contact us", support_path %>
-            if you have a question or need help
-          </li>
-          <li>
-            <%= govuk_link_to "subscribe to our mailing list", mailing_list_path %>
-            to get updates about new features
-          </li>
-        </ul>
       </section>
     </div>
   </div>
