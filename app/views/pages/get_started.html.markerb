@@ -33,11 +33,7 @@ You’ll be able to get help with this process from the GOV.UK Forms team.
 
 ## Updates and forthcoming features
 
-If GOV.UK Forms doesn’t meet your needs yet, you can:
-
-- [subscribe to our mailing list](<%= mailing_list_path %>)
-to get updates about new features
-- [read about our forthcoming features](<%= forthcoming_features_path %>)
+If GOV.UK Forms doesn’t meet your needs yet, you can [read about our forthcoming features](<%= forthcoming_features_path %>).
 
 ## Contact us
 
