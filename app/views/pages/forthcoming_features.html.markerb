@@ -11,26 +11,22 @@ We'll update everyone with an account when we release new features.
 
 ## What we're working on now
 
-- ‘Branching’ improvements to allow you to have more than 2 branches from a question
-- Improvements for managing users in an organisation
-
-## Later in 2026
-
-- Allowing people to save their progress through a form and return later on
-- Customisable branding so you can change the way forms look
-- Allowing people to answer a group of questions multiple times
-- Opening up use of GOV.UK Forms to local government
+- Improvements to routing, so you can have more than 2 branches from a question page
+- Allowing people to save their progress and return to a form later
 - Improvements to the ways you can receive form submissions
+- Customisable branding - so you can change the way forms look
 
 ## Further in the future
 
-- Previews of what each question will look like as you're adding them to your form
-- Opening up use of GOV.UK Forms to the wider public sector
-- A history of previous versions of a form, and the ability to revert back to them
-- Question templates so you can add common questions to a form even faster
+- Allowing people to answer a group of questions multiple times
+- Opening up use of GOV.UK Forms to local government - then to the wider public sector
+- Custom validation, so you can be more specific about what answers you’ll accept
+- Being able to preview what each question will look like as you’re adding them to your form
+- Storing previous versions of a form, and being able to revert back to them
+- Question templates, so you can add common questions to a form even faster
 - Taking payments via API - so you can collect payments part way through the journey through a form
 - More detailed metrics about a form's performance and an integrated way to get feedback from people who fill in a form
-- Allowing people to fill in forms using information they've already provided to government
+- Allowing people to fill in forms using information they’ve already provided to government
 
 ## Other features
 
