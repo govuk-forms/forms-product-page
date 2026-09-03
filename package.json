@@ -8,7 +8,7 @@
   "devDependencies": {
     "esbuild": "0.28.2",
     "jsdom": "^30.0.1",
-    "sass": "^1.102.0",
+    "sass": "^1.103.1",
     "standard": "^17.1.2",
     "vite": "^8.2.1",
     "vite-plugin-ruby": "^5.2.2",
