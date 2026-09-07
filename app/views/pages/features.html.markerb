@@ -33,22 +33,22 @@ When people complete a form, their responses will be validated to make sure they
 
 For questions that ask for certain types of personal information (such as a name, address or date of birth) the input field will be encoded so people can use their browser or assistive technology to answer more easily. For example, by completing the field with information saved in their browser.
 
-## Add a route to skip questions based on a specific answer
+## Use routes to skip questions or create branches
 
-You can add a route to a question where people select only one option from a list. You'll specify which option the route starts from and, if someone selects that option, they'll be skipped forward to a later question, the end of the form, or an exit page to remove them from the form.
+You can add routes to direct people through your form based on their answers, so they only need to answer the questions that are relevant to them.
 
-People who select any other answer will continue to the next question and through the rest of the form.
+For questions where people select one option from a list, you can add a route from each option to send them to:
 
-For example, you could ask someone a Yes/No question about something and only ask further questions about that thing if they select 'Yes'. Anyone who answers 'No' will be skipped forward to the next question that's relevant for them.
+- a later question in the form
+- an 'exit page', to explain why they cannot use the form and what to do instead
+- the end of the form
 
-## Add a second route to create 2 'branches' of questions
-
-If you need to, you can add a second route to make people who select any other answer skip the questions you sent the first route to. This will give you 2 sets of questions - or 'branches' - based on one answer.
-
+From any other type of question, you can add a route to send people to a later question or the end of the form. This allows you to create ‘branches’ of different questions for people based on their answer to a previous question.
 So, for example, you can:
 
 - ask one set of questions for people who answer 'Yes' and another set for people who answer 'No'
-- ask one set of questions if the answer is 'A' and another set if the answer is 'B', 'C' or 'D'
+- ask a different set of questions for each of the options in a list
+- send people who select an option that makes them ineligible to an exit page
 
 ## Add an ‘exit page’ to remove someone from a form
 
