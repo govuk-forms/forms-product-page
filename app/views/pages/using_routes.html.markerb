@@ -2,3 +2,61 @@
 <% set_page_description('') %>
 
 # Using routes
+
+## Using routes to skip questions, create branches and tell people they cannot use a form
+
+You can use ‘routes’ to direct people through your form based on their answers, so people will only need to answer questions that are relevant to them. 
+
+## What you can do with routes
+
+For questions where people select one option from a list, you can add a route from each option to send them to:
+
+- a later question in the form
+- an ‘exit page’ to explain why they cannot use the form and what to do instead
+- the end of the form
+
+For any other type of question, you can add a route to send people to a later question or the end of the form. This allows you to create ‘branches’ of different questions for people based on their answer to a previous question.
+
+Routes can only go forwards to a later question, the end of the form, or an exit page. They cannot go backwards. 
+
+##Planning your form and its routes
+
+We recommend planning your form's questions and structure before you start creating the form in the platform. This is especially helpful for longer or more complex forms - including forms that use routes. 
+
+You may want to use a diagramming tool, such as Mural or Figma, to visualise your questions and the journeys people can take through them.
+
+We also advise you to try creating some test questions and routes in the platform to familiarise yourself with how routing works, and what you can and cannot do with it. 
+
+##How to add and edit routes
+
+Once you’ve planned your questions and the routes you’ll need, you can create the form in the platform. Add your questions first, then add your routes. You can only add routes between questions that already exist in your form.
+
+You add and edit routes on the ‘Edit question routes’ page. You’ll find this by selecting the button near the top of the ‘Add and edit your questions’ page.
+
+The ‘Edit question routes’ page lists all your form’s questions and shows the current routes that will be followed after:
+
+- each question is answered
+- an option is selected from a question where people have to select one option from a list
+
+By default, the routes will go to the next question in the form. You can change the routes as necessary.  
+
+To add or edit a route:
+
+1. Go to the question or option you want to route from.
+2. Select the destination you want to send people to after that select that option or answer the question.
+3. Select ‘Save and continue’ at the bottom of the page to save your changes.
+
+##How to add an exit page
+
+Exit pages can only be added to questions where people have to select one option from a list. You add and edit exit pages on the ‘Edit question routes’ page. 
+To add an exit page:
+
+1. Select the ‘Add an exit page’ button under the question you need to add an exit page to.
+2. Give the exit page a heading and add some content to explain why the person who sees it cannot continue with the form and what they should do instead.
+3. Save the exit page - you’ll go back to the ‘Edit question routes’ page and your new exit page will be listed under the question you added it to. 
+4. Select the exit page from the drop-down list under the option that should take people to the exit page when they select it.
+5. Select ‘Save and continue’ at the bottom of the page to save your changes.
+
+##Changes to your form
+
+Be aware that changing your form’s structure can affect your routes. If you move questions, change answer types, or delete options that have existing routes, you may need to update or remove those routes to ensure the form works as expected.
