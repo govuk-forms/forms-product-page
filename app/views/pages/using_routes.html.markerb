@@ -1,5 +1,5 @@
 <% set_page_title('Using routes') %>
-<% set_page_description('') %>
+<% set_page_description('How to use routes in GOV⁠.⁠UK Forms so people only see questions that are relevant to them.') %>
 
 # Using routes
 
