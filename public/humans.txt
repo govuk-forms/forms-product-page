@@ -1,4 +1,4 @@
-This month we’re sadly saying goodbye to a few longstanding GOV.UK Forms team
+This month we're sadly saying goodbye to a few longstanding GOV.UK Forms team
 members:
 
 - Iain Boyd - (joined 2021) 
@@ -9,14 +9,14 @@ members:
 - Tom Iles - (joined 2022) 
 - Adam Robertson - (joined 2022)
 
-They’ve all been with us since our Private Beta or earlier, and they’ve all had
+They've all been with us since our Private Beta or earlier, and they've all had
 significant impact on the shape of our product.
 
-In their time on the team they’ve brought their expertise and care to their 
-work, and they’ve all been wonderful colleagues to boot. 
+In their time on the team they've brought their expertise and care to their 
+work, and they've all been wonderful colleagues to boot. 
 
-They’re moving to other teams within GDS, so we know they’ll keep delivering
+They're moving to other teams within GDS, so we know they'll keep delivering
 great services for users.
 
 GOV.UK Forms is built by a team at the Government Digital Service in London, 
-Manchester and Bristol. If you’d like to join us, see https://gdscareers.gov.uk/
+Manchester and Bristol. If you'd like to join us, see https://gdscareers.gov.uk/
