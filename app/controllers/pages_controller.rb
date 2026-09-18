@@ -25,4 +25,5 @@ class PagesController < ApplicationController
   def create_good_forms; end
   def processing_completed_form_submissions; end
   def data_protection_security; end
+  def using_routes; end
 end
