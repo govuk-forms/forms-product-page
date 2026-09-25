@@ -131,10 +131,10 @@ GEM
     erubi (1.13.1)
     globalid (1.4.0)
       activesupport (>= 6.1)
-    govuk-components (6.4.1)
+    govuk-components (6.5.0)
       html-attributes-utils (~> 1.0.0, >= 1.0.0)
       pagy (>= 6, < 10)
-      view_component (>= 4.9, < 4.13)
+      view_component (>= 4.9, < 4.16)
     govuk_design_system_formbuilder (6.5.0)
       actionview (>= 7.2)
       activemodel (>= 7.2)
@@ -372,7 +372,7 @@ GEM
     unicode-emoji (4.2.0)
     uri (1.1.1)
     useragent (0.16.11)
-    view_component (4.12.0)
+    view_component (4.15.0)
       actionview (>= 7.1.0)
       activesupport (>= 7.1.0)
       concurrent-ruby (~> 1)
@@ -475,7 +475,7 @@ CHECKSUMS
   erb (6.0.6) sha256=a9b24986700f5bf127c4f297c5403c3ca41b83b0a316c0cd09a096b56e644ae5
   erubi (1.13.1) sha256=a082103b0885dbc5ecf1172fede897f9ebdb745a4b97a5e8dc63953db1ee4ad9
   globalid (1.4.0) sha256=037f12fbf1d9d7a014d501c2d5c77356fd4ddd96d7a7991d6700bba96706f427
-  govuk-components (6.4.1) sha256=71c19f80849992dfffac7968ce674c961ab9e1f7b64b94d6bf9e95f5d1f896a6
+  govuk-components (6.5.0) sha256=9f2476ac0c64a15ce4afc5d331c5f318679401f6cb844876a03b2f120f47b45c
   govuk_design_system_formbuilder (6.5.0) sha256=ab8932ed72d49025418a4c91d062d221c4fcf761232c9af217ef8e71c3ae4485
   govuk_markdown (2.0.4) sha256=c744f0a041607d60942c24dcf3d8fd24eaf73c4eb8299ea025455691a211242e
   hana (1.3.7) sha256=5425db42d651fea08859811c29d20446f16af196308162894db208cac5ce9b0d
@@ -569,7 +569,7 @@ CHECKSUMS
   unicode-emoji (4.2.0) sha256=519e69150f75652e40bf736106cfbc8f0f73aa3fb6a65afe62fefa7f80b0f80f
   uri (1.1.1) sha256=379fa58d27ffb1387eaada68c749d1426738bd0f654d812fcc07e7568f5c57c6
   useragent (0.16.11) sha256=700e6413ad4bb954bb63547fa098dddf7b0ebe75b40cc6f93b8d54255b173844
-  view_component (4.12.0) sha256=b9a5979d1c43eba2aa21a06a86f661aab3990104855f2909ef7c3779acdcdcb4
+  view_component (4.15.0) sha256=2924e207b102c04ab51c4d318535f03f1c3aab3c81ecff99b1cc631b43e14eac
   vite_rails (3.11.1) sha256=61fa4a7c9248fc28f22a05e0760810bf79f645b776c721d888a815c5d21dd338
   vite_ruby (3.10.2) sha256=db465451eb180abbdc81f596ba63671d2b2552e2bb7bf3c1f7b79f9d58ca9a86
   webmock (3.26.4) sha256=8d8da206d217ebe6968cfb09c77f4533c23074e1432bad865f3994eacbaad50d
