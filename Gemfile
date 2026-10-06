@@ -63,7 +63,7 @@ group :test do
   gem "webmock"
 
   # Code coverage reporter
-  gem "simplecov", "~> 1.3.0", require: false
+  gem "simplecov", "~> 1.3.1", require: false
 
   # For validating the JSON schema for form submissions
   gem "json_schemer"
