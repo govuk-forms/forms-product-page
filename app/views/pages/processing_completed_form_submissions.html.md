@@ -21,7 +21,19 @@ The body of the email includes each of the questions asked in the form, followed
 
 It may be easier to work with submission data in JSON or CSV format, for example if you’re planning to automate your form processing using a low code platform like MS Power Automate or Google Apps Script.
 
-When you create or edit a form, you can opt to get submission data attached to the emails as a JSON or CSV file - as well as in the body of the email. Send yourself test submissions so you can see how emails are laid out and help set up your automation. You can view the [JSON schema for form submissions](https://www.forms.service.gov.uk/json-submissions/v1/schema).
+When you create or edit a form, you can opt to get submission data attached to the emails as a JSON or CSV file - as well as in the body of the email. Send yourself test submissions so you can see how emails are laid out and help set up your automation. 
+
+To see how the JSON file is structured, you can view the [JSON schema for form submissions](https://www.forms.service.gov.uk/json-submissions/v1/schema).
+
+### How question IDs work in JSON submissions
+
+Each answer includes a `question_id`. This unique identifier stays the same if you:
+
+* change the question text or answer type
+* move the question
+* add or remove other questions
+
+If you delete a question and add it again, it gets a new identifier. You’ll need to update any automation that uses the old identifier.
 
 ## Get a daily or weekly CSV of completed forms
 
