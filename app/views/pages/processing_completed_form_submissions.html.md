@@ -23,6 +23,16 @@ It may be easier to work with submission data in JSON or CSV format, for example
 
 When you create or edit a form, you can opt to get submission data attached to the emails as a JSON or CSV file - as well as in the body of the email. Send yourself test submissions so you can see how emails are laid out and help set up your automation. You can view the [JSON schema for form submissions](https://www.forms.service.gov.uk/json-submissions/v1/schema).
 
+### Question identifiers in JSON submissions
+
+Each answer includes a `question_id`. This unique identifier stays the same if you:
+
+* change the question text or answer type
+* move the question
+* add or remove other questions
+
+If you delete a question and add it again, it gets a new identifier. You’ll need to update any automation that uses the old identifier.
+
 ## Get a daily or weekly CSV of completed forms
 
 You can get a daily or weekly CSV file of all the submissions to a form from the previous day or week. You’ll continue to receive individual completed form submissions as usual. If your form has any file upload questions, the uploaded files will only be attached to the individual submissions. 
