@@ -22,8 +22,8 @@ gem "lograge", "~> 0.15"
 gem "config"
 
 # Use Sentry (https://sentry.io/for/ruby/?platform=sentry.ruby.rails#)
-gem "sentry-rails", "~> 6"
-gem "sentry-ruby", "~> 6"
+gem "sentry-rails", "~> 7"
+gem "sentry-ruby", "~> 7"
 
 # For markdown rendering
 gem "govuk_markdown", "~> 2.0", ">= 2.0.4"
