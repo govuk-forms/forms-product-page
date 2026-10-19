@@ -10,6 +10,11 @@ Rails.application.configure do
   # Eager load code on boot for better performance and memory savings (ignored by Rake tasks).
   config.eager_load = true
 
+  # Disable YJIT. Its warm-up compilation makes the first requests to a newly
+  # started process much slower on low-CPU hosts, and this mostly static site
+  # doesn't do enough repeated work to benefit from it.
+  config.yjit = false
+
   # Full error reports are disabled.
   config.consider_all_requests_local = false
 
