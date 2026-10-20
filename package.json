@@ -12,7 +12,7 @@
     "standard": "^17.1.2",
     "vite": "^8.3.3",
     "vite-plugin-ruby": "^5.2.5",
-    "vitest": "^5.0.3"
+    "vitest": "^5.0.4"
   },
   "scripts": {
     "lint": "standard",
