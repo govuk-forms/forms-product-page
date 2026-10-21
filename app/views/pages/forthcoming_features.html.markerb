@@ -3,7 +3,7 @@
 
 # Forthcoming features
 
-Last updated 17 September 2026
+Last updated 21 October 2026
 
 These are the features we're working on next and approximately when we hope to release them.
 
@@ -11,29 +11,37 @@ This information is just a guide. It's not everything we're doing, and things ma
 
 We'll update everyone with an account when we release new features.
 
-## What we're working on now
+## Over the next 3 months we'll be prioritising
 
-- Improvements to routing, so you can have more than 2 branches from a question page
-- Allowing people to save their progress and return to a form later
-- Customisable branding - so you can change the way forms look
+- Allowing people to save their progress and return to a form later using One Login 
+- Improvements to our new multiple routing feature, so you can add routes to questions that have more than 10 options 
+- Delivering submissions via a webhook so it's easier to integrate with other systems, for example customer management systems 
+- Opening early access for local authorities to use GOV.UK Forms – [contact us](https://www.forms.service.gov.uk/support) if you are interested, as places are limited 
 
 ## What we're planning next
 
-- Improvements to the ways you can receive form submissions
-- Allowing people to answer a group of questions multiple times
-- Exploring integration with GOV⁠.⁠UK App and Agentic AI
-- Opening up use of GOV⁠.⁠UK Forms to local government
+- Custom validation to limit number of characters, dates and improve how to find addresses 
+- Allowing you to customise the branding on your forms, rather than having to request it 
+- Opening up use of GOV⁠.⁠UK Forms to local government and non-crown central government 
+- Allowing people to answer a group of questions multiple times 
+- Exploring integration with GOV⁠.⁠UK App and Agentic AI 
 
 ## Further in the future
 
-- Custom validation, so you can be more specific about what answers you’ll accept
-- Being able to preview what each question will look like as you’re adding them to your form
-- Storing previous versions of a form, and being able to revert back to them
-- Question templates, so you can add common questions to a form even faster
-- Taking payments via API - so you can collect payments part way through the journey through a form
-- More detailed metrics about a form's performance and an integrated way to get feedback from people who fill in a form
-- Allowing people to fill in forms using information they’ve already provided to government
-- Opening up use of GOV⁠.⁠UK Forms to the wider public sector
+- Improve how to add users to groups 
+- More detailed metrics about a form’s performance and an integrated way to get feedback from people who fill in a form 
+- Being able to preview what each question will look like, as you’re adding them to your form 
+- Storing previous versions of a form, and being able to revert back to them 
+- Opening up use of GOV⁠.⁠UK Forms to the wider public sector 
+- Taking payments via API - so you can collect payments part way through the journey through a form 
+- Allowing people to fill in forms using information they’ve already provided to government 
+
+## What’s new  
+
+- You can add routes to direct people through your form based on their answers, so they only need to answer the questions that are relevant to them
+- We released a private beta version of customisable branding on forms, [contact us](https://www.forms.service.gov.uk/support) if you want to use it 
+
+You can also [read about our current features](https://www.forms.service.gov.uk/about/features). 
 
 ## Other features
 
