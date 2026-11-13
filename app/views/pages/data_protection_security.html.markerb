@@ -60,6 +60,9 @@ including:
 - setting up DMARC and TLS reporting (TLS-RPT) and reviewing the data
   regularly
 
+We only send submission emails using TLS. If your mail server does not
+support TLS, submissions will not be delivered to it.
+
 ### Data at rest
 
 All data stored by GOV.UK Forms, including backups, are encrypted at

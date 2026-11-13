@@ -7,6 +7,8 @@ GOV.UK Forms sends you form submissions as they are completed. You can receive t
 By default, submissions are sent by email - from no-reply@forms.service.gov.uk
 to the email address you nominate when creating the form. Any files you ask the user to upload are attached to the email.
 
+Your mail server must support Transport Layer Security (TLS) or you will not receive submissions. Check with your IT team if you’re not sure.
+
 Each submission is given a unique reference. The unique reference is included in the subject line and the body of the email.
 
 Submission email subject lines use this format:
