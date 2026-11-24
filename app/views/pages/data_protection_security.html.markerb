@@ -67,6 +67,12 @@ rest.
 
 ## Submission data retention
 
+Where a form allows people to save their progress and return later, saved answers, including Form Filler Personal Data, are kept for 30 days from the last time the form filler saved them. Saving again restarts this period.  
+
+If the form filler does not save their answers again within this period, their saved answers are permanently deleted.  
+
+If they submit the form, their answers are treated as a completed form submission and kept as set out below. 
+
 Form submission data is retained for up to 30 days in case of failed
 delivery, then automatically deleted.
 
@@ -86,8 +92,11 @@ mail server to restrict who or what can send emails to the mailbox. For
 example, you could configure it to only accept submission emails sent
 from GOV.UK Forms.
 
-Forms published on GOV.UK Forms are unauthenticated. While a person is
-filling in a form, their answers are held in a browser session
+GOV.UK Forms does not check the identity of people filling in forms. Anyone can fill in a form. If you need to verify who submitted a form, you are responsible for checking this in your own processes. 
+
+Some forms let people save their progress or get a copy of their answers by email. To do this, they need to sign in with GOV.UK One Login. This checks they can access their email address. It does not check who they are. 
+
+While a person is filling in a form, their answers are held in a browser session
 accessible to anyone using that browser. Once the form is submitted, the
 answers are no longer accessible to the person who submitted the form.
 

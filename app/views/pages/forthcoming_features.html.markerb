@@ -3,7 +3,7 @@
 
 # Forthcoming features
 
-Last updated 21 October 2026
+Last updated 23 November 2026
 
 These are the features we're working on next and approximately when we hope to release them.
 
@@ -15,7 +15,6 @@ We'll update everyone with an account when we release new features.
 
 Over the next 3 months we'll be prioritising:
 
-- Allowing people to save their progress and return to a form later using One Login 
 - Improvements to our new multiple routing feature, so you can add routes to questions that have more than 10 options 
 - Delivering submissions via a webhook so it's easier to integrate with other systems, for example customer management systems 
 - Opening early access for local authorities to use GOV.UK Forms – [contact us](https://www.forms.service.gov.uk/support) if you are interested, as places are limited 
@@ -40,6 +39,7 @@ Over the next 3 months we'll be prioritising:
 
 ## What’s new  
 
+- Allowing people to save their progress and return to a form later using One Login 
 - You can add routes to direct people through your form based on their answers, so they only need to answer the questions that are relevant to them
 - We released a private beta version of customisable branding on forms, [contact us](https://www.forms.service.gov.uk/support) if you want to use it 
 

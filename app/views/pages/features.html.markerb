@@ -74,7 +74,13 @@ By default, data from each completed form is sent in the body of an email - to t
 
 [Read more about options for processing completed form submissions](https://www.forms.service.gov.uk/processing-completed-form-submissions).
 
-## People can check their answers before they submit a form - and get a copy of them by email
+## Let people save their answers and come back later
+
+You can give people the option to save their answers and return to your form later to finish filling it in. This helps with longer forms, or when people need time to find information before answering.  
+
+People sign in with GOV.UK One Login to save their answers, and we email them a link so they can continue later. We keep saved answers for 30 days from the last time they were saved. If someone saves them again, the 30 days start again. 
+
+## Show people their answers before they submit a form, and let them get a copy by email
 
 People will be shown a summary page when they have answered all the questions in a form. They will be able to review and check their answers before they submit the form. 
 
@@ -107,7 +113,7 @@ The contact information will be displayed at the bottom of every page of the for
 
 It will also be shown in an automatic email confirming that a form's been submitted - if someone chooses to receive this.
 
-## Welsh forms
+## Make a Welsh version of your form
 
 You can make a Welsh version of a form. People will be able to switch between English and Welsh as they go through the form.
 
