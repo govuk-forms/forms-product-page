@@ -7,10 +7,10 @@
   },
   "devDependencies": {
     "esbuild": "0.28.2",
-    "jsdom": "^31.0.0",
-    "sass": "^1.108.1",
+    "jsdom": "^31.0.1",
+    "sass": "^1.108.2",
     "standard": "^17.1.2",
-    "vite": "^8.3.7",
+    "vite": "^8.3.8",
     "vite-plugin-ruby": "^5.2.6",
     "vitest": "^5.1.0"
   },
